@@ -1,0 +1,24 @@
+@import "../../../assets/color/colors";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@variants hover, focus{
+    .secondary{
+      background-color: $secondary-color;
+    }
+  }
+
+  .bg-color{
+    background-color: $base-color;
+  }
+
+  .primaryColor{
+    color: $text-color;
+  }
+
+  
+
+
