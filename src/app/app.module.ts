@@ -18,8 +18,8 @@ import { FeaturedComponent } from './components/featured/featured.component';
 
 //MODULES
 import { FormsModule } from '@angular/forms';
-import {IvyCarouselModule} from 'angular-responsive-carousel';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+// import {IvyCarouselModule} from 'angular-responsive-carousel';
+// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -34,14 +34,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ProductsComponent,
     GalleryComponent,
     FeaturedComponent,
-   
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    IvyCarouselModule,
-    FontAwesomeModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
