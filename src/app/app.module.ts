@@ -18,6 +18,8 @@ import { FeaturedComponent } from './components/featured/featured.component';
 
 //MODULES
 import { FormsModule } from '@angular/forms';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { ContentOneComponent } from './components/content-one/content-one.component';
 // import {IvyCarouselModule} from 'angular-responsive-carousel';
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -34,6 +36,8 @@ import { FormsModule } from '@angular/forms';
     ProductsComponent,
     GalleryComponent,
     FeaturedComponent,
+    AboutUsComponent,
+    ContentOneComponent,
 
   ],
   imports: [

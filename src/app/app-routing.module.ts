@@ -2,17 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ProductsComponent } from './pages/products/products.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'product', component: ProductsComponent,
-  children: [
-    { path: '', component: ProductsComponent },
-    { path: 'product/sweets', component: ProductsComponent },
-    { path: 'product/others', component: ProductsComponent },
-  ] },
+  { path: 'product', loadChildren: () => import('./pages/products/products.module').then(m => m.ProductsModule) },
+  { path: 'about-us', loadChildren: () => import('./pages/about-us/about-us.module').then(m => m.AboutModule) },
   { path: 'gallery', component: GalleryComponent}
 ];
 
